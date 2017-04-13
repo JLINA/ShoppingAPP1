@@ -1,0 +1,37 @@
+var app=angular.module("szgwApp",['ui.router','szgw.cotroller','szgw.directive']);
+app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+	   $stateProvider.state('index',{
+	   	      url:'/index',
+	   	      templateUrl:'template/index.html',
+	   	      controller:'indexCtrl'
+	   }).state('index.one',{
+	   	      url:'/one',
+	   	      templateUrl:'template/one.html',
+	   	      controller:'oneCtrl'
+	   }).state('index.two',{
+	   	      url:'/two',
+	   	      templateUrl:'template/two.html',
+	   	      controller:'twoCtrl'
+	   }).state('index.three',{
+	   	      url:'/three',
+	   	      templateUrl:'template/three.html',
+	   	      controller:'threeCtrl'
+	   }).state('index.four',{
+	   	      url:'/four',
+	   	      templateUrl:'template/four.html',
+	   	      controller:'fourCtrl'
+	   }).state('index.five',{
+	   	      url:'/five',
+	   	      templateUrl:'template/five.html',
+	   	      controller:'fiveCtrl'
+	   }).state('index.onelist1',{
+	   	      url:'/onelist1',
+	   	      templateUrl:'template/onelist1.html',
+	   	      controller:'onelist1Ctrl'
+	   }).state('index.goodList',{
+	   	      url:'/goodList',
+	   	      templateUrl:'template/goodList.html',
+	   	      controller:'goodListCtrl'
+	   })
+	   $urlRouterProvider.when('','/index/one');
+}])

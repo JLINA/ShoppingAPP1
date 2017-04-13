@@ -1,0 +1,15 @@
+<div class="weui-tabbar" style="position: fixed;">
+    <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on" ng-repeat="nav in navs" ng-click="Toggle1(nav.id,nav.url)">
+    
+      <div class="weui-tabbar__icon">
+        <img ng-src={{nav.src}} alt="">
+      </div>
+      <p class="weui-tabbar__label">{{nav.name}}</p>
+    </a>
+  </div>
+</div>
+<div ui-view=""></div>
+
+
+
+
